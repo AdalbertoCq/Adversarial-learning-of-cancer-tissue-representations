@@ -59,8 +59,8 @@ class Attention_MIL():
 		interm = inputs
 		if use:
 			net = dense(inputs=inputs, out_dim=int(self.z_dim/2), scope=1, use_bias=True, spectral=False, init='xavier', regularizer=None, display=True)
-			net = ReLU(net)
-			net = dense(inputs=net,    out_dim=int(self.z_dim/2), scope=2, use_bias=True, spectral=False, init='xavier', regularizer=None, display=True)
+			# net = ReLU(net)
+			# net = dense(inputs=net,    out_dim=int(self.z_dim/2), scope=2, use_bias=True, spectral=False, init='xavier', regularizer=None, display=True)
 			interm = ReLU(net)
 		
 		return interm

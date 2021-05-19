@@ -14,7 +14,7 @@ os.environ['HDF5_USE_FILE_LOCKING'] = 'FALSE'
 parser = argparse.ArgumentParser(description='Deep Attention Multiple Instance Learning (MIL) trainer.')
 parser.add_argument('--dataset',            dest='dataset',            type=str,   default='TCGAFFPE_set00_90pcFFPE',  help='Dataset to use.')
 parser.add_argument('--z_dim',              dest='z_dim',              type=int,   default=200,                        help='Latent space size.')
-parser.add_argument('--att_dim',            dest='att_dim',            type=int,   default=150,                        help='Dimensions of the attention network, default is 150.')
+parser.add_argument('--att_dim',            dest='att_dim',            type=int,   default=5,                          help='Dimensions of the attention network, default is 150.')
 parser.add_argument('--bag_size',           dest='bag_size',           type=int,   default=10000,                      help='Maximum number of instaces for a bag, default is 10K.')
 parser.add_argument('--img_size',           dest='img_size',           type=int,   default=224,                        help='Image size for the model.')
 parser.add_argument('--epochs',             dest='epochs',             type=int,   default=50,                         help='Number epochs to run, default is 50 epochs.')
