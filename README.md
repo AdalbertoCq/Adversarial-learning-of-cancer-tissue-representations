@@ -8,6 +8,47 @@
 
 *Our results show that our model captures distinct phenotypic characteristics of real tissue samples, paving the way for further understanding of tumor progression and tumor micro-environment, and ultimately refining histopathological classification for diagnosis and treatment.*
 
+## Training PathologyGAN:
+You can find a pre-processed HDF5 file with patches of 224x224x3 resolution of the H&E breast cancer dataset [here](https://drive.google.com/open?id=1LpgW85CVA48C8LnpmsDMdHqeCGHKsAxw). Place the 'vgh_nki' under the 'datasets' folder in the main 'Adversarial-learning-of-cancer-tissue-representations' path.
+
+Each model was trained on an NVIDIA Titan 24 GB for 45 epochs, approximately 72 hours.
+
+```
+usage: run_pathgan_encoder.py [-h] [--model MODEL] [--img_size IMG_SIZE]
+                              [--img_ch IMG_CH] [--dataset DATASET]
+                              [--marker MARKER] [--z_dim Z_DIM]
+                              [--epochs EPOCHS] [--batch_size BATCH_SIZE]
+                              [--check_every CHECK_EVERY] [--restore]
+                              [--report] [--main_path MAIN_PATH]
+                              [--dbs_path DBS_PATH]
+
+PathologyGAN Encoder trainer.
+
+optional arguments:
+  -h, --help            show this help message and exit
+  --model MODEL         Model name.
+  --img_size IMG_SIZE   Image size for the model.
+  --img_ch IMG_CH       Number of channels for the model.
+  --dataset DATASET     Dataset to use.
+  --marker MARKER       Marker of dataset to use.
+  --z_dim Z_DIM         Latent space size.
+  --epochs EPOCHS       Number epochs to run: default is 45 epochs.
+  --batch_size BATCH_SIZE
+                        Batch size, default size is 64.
+  --check_every CHECK_EVERY
+                        Save checkpoint and generate samples every X epcohs.
+  --restore             Restore previous run and continue.
+  --report              Report latent space figures.
+  --main_path MAIN_PATH
+                        Path for the output run.
+  --dbs_path DBS_PATH   Directory with DBs to use.
+```
+
+* Pathology GAN training example:
+```
+python3 run_pathgan_encoder.py 
+```
+
 ## Datasets:
 
 ### H&E Color Cancer
