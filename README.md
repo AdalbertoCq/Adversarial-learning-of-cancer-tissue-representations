@@ -57,7 +57,7 @@ We use these Netherlands Cancer Institute (NKI) cohort and the Vancouver General
 
 You can find a pre-processed HDF5 file with patches of 224x224x3 resolution [here](https://drive.google.com/open?id=1LpgW85CVA48C8LnpmsDMdHqeCGHKsAxw), each of the patches also contains labeling information of the estrogen receptor status and survival time.
 
-### H&E Color Cancer
+### H&E Colorectal Cancer
 The H&E colorectal cancer dataset can be found [here](https://zenodo.org/record/1214456#.XyAAxPhKgkg). The dataset from National Center for Tumor diseases (NCT, Germany) [3] provides tissue images of 224 × 224 resolution with an as- sociated type of tissue label: Adipose, background, debris, lymphocytes, mucus, smooth muscle, normal colon mucosa, cancer-associated stroma, and colorectal adenocarcinoma epithelium (tumor). The dataset is divided into a training set of 100K tissue tiles and 86 patients, and a test set of 7K tissue tiles and 50 patients, there is no overlapping patients between train and test sets. 
 
 \[1] Beck, A.H. and Sangoi, A.R. and Leung, S. Systematic analysis of breast cancer morphology uncovers stromal features associated with survival. Science translational medicine (2018).
