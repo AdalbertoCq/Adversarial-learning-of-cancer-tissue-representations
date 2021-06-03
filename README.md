@@ -25,28 +25,61 @@ usage: run_pathgan_encoder.py [-h] [--model MODEL] [--img_size IMG_SIZE]
 PathologyGAN Encoder trainer.
 
 optional arguments:
-  -h, --help            show this help message and exit
-  --model MODEL         Model name.
-  --img_size IMG_SIZE   Image size for the model.
-  --img_ch IMG_CH       Number of channels for the model.
-  --dataset DATASET     Dataset to use.
-  --marker MARKER       Marker of dataset to use.
-  --z_dim Z_DIM         Latent space size.
-  --epochs EPOCHS       Number epochs to run: default is 45 epochs.
-  --batch_size BATCH_SIZE
-                        Batch size, default size is 64.
-  --check_every CHECK_EVERY
-                        Save checkpoint and generate samples every X epcohs.
-  --restore             Restore previous run and continue.
-  --report              Report latent space figures.
-  --main_path MAIN_PATH
-                        Path for the output run.
-  --dbs_path DBS_PATH   Directory with DBs to use.
+  -h, --help                    show this help message and exit
+  --model MODEL                 Model name.
+  --img_size IMG_SIZE           Image size for the model.
+  --img_ch IMG_CH               Number of channels for the model.
+  --dataset DATASET             Dataset to use.
+  --marker MARKER               Marker of dataset to use.
+  --z_dim Z_DIM                 Latent space size.
+  --epochs EPOCHS               Number epochs to run: default is 45 epochs.
+  --batch_size BATCH_SIZE       Batch size, default size is 64.
+  --check_every CHECK_EVERY     Save checkpoint and generate samples every X epcohs.
+  --restore                     Restore previous run and continue.
+  --report                      Report latent space figures.
+  --main_path MAIN_PATH         Path for the output run.
+  --dbs_path DBS_PATH           Directory with DBs to use.
 ```
 
-* Pathology GAN training example:
+* Command example:
 ```
 python3 run_pathgan_encoder.py 
+```
+
+## Projecting images onto the latent space:
+Once you have a trained model you can project images into the latent space, the vector represenetation will be placed in 'results' folder on an H5 file.
+```
+usage: project_real_tissue_latent_space.py [-h] --checkpoint CHECKPOINT
+                                           --real_hdf5 REAL_HDF5
+                                           [--batch_size BATCH_SIZE]
+                                           [--z_dim Z_DIM] [--model MODEL]
+                                           [--img_size IMG_SIZE]
+                                           [--img_ch IMG_CH]
+                                           [--dataset DATASET]
+                                           [--marker MARKER]
+                                           [--dbs_path DBS_PATH]
+                                           [--main_path MAIN_PATH]
+                                           [--num_clusters NUM_CLUSTERS]
+                                           [--clust_percent CLUST_PERCENT]
+                                           [--features] [--save_img]
+
+Projection of tissue images onto the GAN's latent space.
+
+optional arguments:
+  -h, --help                      show this help message and exit
+  --checkpoint CHECKPOINT         Path to pre-trained weights (.ckt) of PathologyGAN.
+  --real_hdf5 REAL_HDF5           Path for real image to encode.
+  --batch_size BATCH_SIZE         Batch size.
+  --z_dim Z_DIM                   Latent space size.
+  --model MODEL                   Model name.
+  --img_size IMG_SIZE             Image size for the model.
+  --img_ch IMG_CH                 Image channels for the model.
+  --dataset DATASET               Dataset to use.
+  --marker MARKER                 Marker of dataset to use.
+  --dbs_path DBS_PATH             Directory with DBs to use.
+  --main_path MAIN_PATH           Path for the output run.
+  --features                      Flag to run features over the images.
+  --save_img                      Save reconstructed images in the H5 file.
 ```
 
 ## Datasets:
