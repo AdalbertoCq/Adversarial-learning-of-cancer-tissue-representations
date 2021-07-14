@@ -19,6 +19,14 @@
 }
 ```
 
+## Demo Materials:
+* [**Tissue Reconstructions**](https://github.com/AdalbertoCq/Adversarial-learning-of-cancer-tissue-representations/tree/main/demos/reconstructions):
+  <p align="center">
+    <img src="https://github.com/AdalbertoCq/Adversarial-learning-of-cancer-tissue-representations/tree/main/demos/reconstructions/PathologyGAN_Encoder_reconstructions.jpg" width="700">
+    <img src="https://github.com/AdalbertoCq/Adversarial-learning-of-cancer-tissue-representations/tree/main/demos/reconstructions/vgh_nki_norm/vgh_nki_norm_img_recon_0.jpg" width="700">
+    <img src="https://github.com/AdalbertoCq/Adversarial-learning-of-cancer-tissue-representations/tree/main/demos/reconstructions/nct/nct_img_recon_0.jpg" width="700">
+  </p>
+
 ## Datasets:
 ### H&E Breast Cancer
 H&E breast cancer databases from the Netherlands Cancer Institute (NKI) cohort and the Vancouver General Hospital (VGH) cohort with 248 and 328 patients respectevely. Each of them include tissue micro-array (TMA) images, along with clinical patient data such as survival time, and estrogen-receptor (ER) status. The original TMA images all have a resolution of 1128x720 pixels, and we split each of the images into smaller patches of 224x224, and allow them to overlap by 50%. We also perform data augmentation on these images, a rotation of 90 degrees, and 180 degrees, and vertical and horizontal inversion. We filter out images in which the tissue covers less than 70% of the area. In total this yields a training set of 249K images, and a test set of 62K.
