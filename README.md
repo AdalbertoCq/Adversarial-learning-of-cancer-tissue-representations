@@ -21,6 +21,7 @@
 
 ## Demo Materials:
 * [**Tissue Reconstructions**](https://github.com/AdalbertoCq/Adversarial-learning-of-cancer-tissue-representations/tree/main/demos/reconstructions):
+  - **(a)** Real tissue images, **(b)** Reconstructed images with PathologyGAN.
   <p align="center">
     <img src="https://github.com/AdalbertoCq/Adversarial-learning-of-cancer-tissue-representations/blob/41d707a72e56124aa518067ea1252eddb73e13e2/demos/reconstructions/PathologyGAN_Encoder_reconstructions.jpg">
     <img src="https://github.com/AdalbertoCq/Adversarial-learning-of-cancer-tissue-representations/blob/41d707a72e56124aa518067ea1252eddb73e13e2/demos/reconstructions/vgh_nki_norm/vgh_nki_norm_img_recon_1.jpg">
