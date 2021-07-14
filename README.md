@@ -8,6 +8,17 @@
 
 *Our results show that our model captures distinct phenotypic characteristics of real tissue samples, paving the way for further understanding of tumor progression and tumor micro-environment, and ultimately refining histopathological classification for diagnosis and treatment.*
 
+## Citation
+```
+@InProceedings{quiros2021adversarial,
+  title={Adversarial learning of cancer tissue representations},
+  author={Quiros, Adalberto Claudio and Coudray, Nicolas and Yeaton, Anna and Suhnhem, Wisuwat and Murray-Smith, Roderick and Tsirigos, Aristotelis and Yuan, Ke},
+  booktitle={International Conference on Medical Image Computing and Computer-Assisted Intervention},
+  year={2021},
+  organization={Springer}
+}
+```
+
 ## Training the model:
 You can find a pre-processed HDF5 file with patches of 224x224x3 resolution of the H&E breast cancer dataset [here](https://drive.google.com/open?id=1LpgW85CVA48C8LnpmsDMdHqeCGHKsAxw). Place the 'vgh_nki' under the 'datasets' folder in the main 'Adversarial-learning-of-cancer-tissue-representations' path.
 
