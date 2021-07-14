@@ -27,6 +27,19 @@
     <img src="https://github.com/AdalbertoCq/Adversarial-learning-of-cancer-tissue-representations/blob/41d707a72e56124aa518067ea1252eddb73e13e2/demos/reconstructions/vgh_nki_norm/vgh_nki_norm_img_recon_1.jpg">
     <img src="https://github.com/AdalbertoCq/Adversarial-learning-of-cancer-tissue-representations/blob/41d707a72e56124aa518067ea1252eddb73e13e2/demos/reconstructions/nct/nct_img_recon_0.jpg">
   </p>
+  
+* [**Latent Space Visualizations**](https://github.com/AdalbertoCq/Adversarial-learning-of-cancer-tissue-representations/blob/main/demos/latent_space):
+   * Uniform Manifold Approximation and Projection (UMAP) vectors of PathologyGAN's latent representations, breast cancer tissue from NKI and VGH (left image) and colorectal cancer tissue from NCT (right image). Breast cancer tissue images are labeled using cancer cell counts, class 8 accounting for the largest cell number. Colorectal cancer tissue images are labeled based on their tissue type.
+  <p align="center">
+    <img src="https://github.com/AdalbertoCq/Adversarial-learning-of-cancer-tissue-representations/blob/c98d1738c7e031a5790315e171b2e61388cbf11f/demos/latent_space/nct/UMAP_latent_space_test_radius_1p51.png" width="400">
+    <img src="https://github.com/AdalbertoCq/Adversarial-learning-of-cancer-tissue-representations/blob/c98d1738c7e031a5790315e171b2e61388cbf11f/demos/latent_space/vgh_nki_norm/UMAP_latent_space_test_radius_1p01.png" width="400">
+  </p>
+
+* [**Latent Representations on Multiple Instance Learning**](https://github.com/AdalbertoCq/Adversarial-learning-of-cancer-tissue-representations/blob/main/demos/latent_space):
+   * Uniform Manifold Approximation and Projection (UMAP) vectors of lung cancer tissue representations. We labeled each patch of the WSI with the corresponding label subject to presence of tumor in the WSI, and highlight images and representations where the attention-based deep MIL focuses to predict the outcome. 
+<p align="center">
+    <img src="https://github.com/AdalbertoCq/Adversarial-learning-of-cancer-tissue-representations/blob/c98d1738c7e031a5790315e171b2e61388cbf11f/demos/latent_space/TCGAFrozen/TCGAFrozen_att_MIL_latent.jpg" width="600">
+  </p>
 
 ## Datasets:
 ### H&E Breast Cancer
