@@ -102,13 +102,20 @@ We use these Netherlands Cancer Institute (NKI) cohort and the Vancouver General
 You can find a pre-processed HDF5 file with patches of 224x224x3 resolution [here](https://drive.google.com/open?id=1LpgW85CVA48C8LnpmsDMdHqeCGHKsAxw), each of the patches also contains labeling information of the estrogen receptor status and survival time.
 
 ### H&E Colorectal Cancer
-The H&E colorectal cancer dataset can be found [here](https://zenodo.org/record/1214456#.XyAAxPhKgkg). The dataset from National Center for Tumor diseases (NCT, Germany) [3] provides tissue images of 224 × 224 resolution with an as- sociated type of tissue label: Adipose, background, debris, lymphocytes, mucus, smooth muscle, normal colon mucosa, cancer-associated stroma, and colorectal adenocarcinoma epithelium (tumor). The dataset is divided into a training set of 100K tissue tiles and 86 patients, and a test set of 7K tissue tiles and 50 patients, there is no overlapping patients between train and test sets. 
+The H&E colorectal cancer dataset can be found [here](https://zenodo.org/record/1214456#.XyAAxPhKgkg). The dataset from National Center for Tumor diseases (NCT, Germany) [3] provides tissue images of 224×224 resolution with an as- sociated type of tissue label: Adipose, background, debris, lymphocytes, mucus, smooth muscle, normal colon mucosa, cancer-associated stroma, and colorectal adenocarcinoma epithelium (tumor). The dataset is divided into a training set of 100K tissue tiles and 86 patients, and a test set of 7K tissue tiles and 50 patients, there is no overlapping patients between train and test sets. 
 
-\[1] Beck, A.H. and Sangoi, A.R. and Leung, S. Systematic analysis of breast cancer morphology uncovers stromal features associated with survival. Science translational medicine (2018).
+### H&E Lung Cancer
+The H&E lung cancer dataset can be found at [The Cancer Genome Atlas (TCGA)](https://portal.gdc.cancer.gov). It contains samples with adenocarcinoma (LUAD), squamous cell carcinoma (LUSC), and normal tissue, composed by 1807 Whole Slide Images (WSIs) of 1184 patients. We make use of the pipeline provided in Coudray et al. [4],  diving each WSI into patches of 224x224 and filtering out images with less than 50% tissue in total area and apply stain normalization [5]. In addition, we label each slide as tumor and non-tumor depending on the presence of lung cancer in the tissue. Finally, we split the dataset into a training set of 916K tissue patches and 666 patients, and a test set of 569K tissue patches and 518 patients, with no overlapping patients between both sets. We use this dataset to apply multiple instance learning (MIL) over latent representations, testing the performance to predict the presence of tumor in the WSI.
 
-\[2] Robert J. Marinelli, Kelli Montgomery, Chih Long Liu, Nigam H. Shah, Wijan Prapong, Michael Nitzberg, Zachariah K. Zachariah, Gavin J. Sherlock, Yasodha Natkunam, Robert B. West, Matt van de Rijn, Patrick O. Brown, and Catherine A. Ball. The Stanford Tissue Microarray Database. Nucleic Acids Res 2008 36(Database issue): D871-7. Epub 2007 Nov 7 doi:10.1093/nar/gkm861.
+\[1] Beck, A.H. and Sangoi, A.R. and Leung, S. Systematic analysis of breast cancer morphology uncovers stromal features associated with survival. Science translational medicine, 2018.
 
-\[3] Kather, J.N., Halama, N., Marx, A.: 100,000 histological images of human colorectal cancer and healthy tissue (Apr 2018)
+\[2] Robert J. Marinelli, Kelli Montgomery, Chih Long Liu, Nigam H. Shah, Wijan Prapong, Michael Nitzberg, Zachariah K. Zachariah, Gavin J. Sherlock, Yasodha Natkunam, Robert B. West, Matt van de Rijn, Patrick O. Brown, and Catherine A. Ball. The Stanford Tissue Microarray Database. Nucleic Acids Res 2008 36(Database issue): D871-7. Epub 2007.
+
+\[3] Kather, J.N., Halama, N., Marx, A.: 100,000 histological images of human colorectal cancer and healthy tissue, 2018.
+
+\[4] Coudray, N., Ocampo, P.S., Sakellaropoulos, T., Narula, N., Snuderl, M., Fenyo ̈, D., Moreira, A.L., Razavian, N., Tsirigos, A.: Classification and mutation predic- tion from non–small cell lung cancer histopathology images using deep learning. Nature Medicine, 2018.
+
+\[5] Reinhard, E., Adhikhmin, M., Gooch, B., Shirley, P.: Color transfer be- tween images. IEEE Computer Graphics and Applications, 2001.
 
 
 ## Python Enviroment:
