@@ -1,5 +1,6 @@
 # Adversarial learning of cancer tissue representations
  * **[Quiros A.C., Coudray N., Yeaton A., Wisuwat W., Murray-Smith R., Tsirigos A., Yuan K. Adversarial learning of cancer tissue representations. Proceedings of The 24th International Conference on Medical Image Computing and Computer-Assisted Intervention (MICCAI) 2021]()** 
+
 **Abstract:**
 
 *Deep learning based analysis of histopathology images shows promise in advancing understanding of tumor progression, tumor micro-environment, and their underpinning biological processes. So far, these approaches have focused on extracting information associated with annotations. In this work, we ask how much information can be learned from the tissue architecture itself.*
