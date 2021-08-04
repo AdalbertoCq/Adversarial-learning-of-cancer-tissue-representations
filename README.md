@@ -82,6 +82,8 @@ tensorflow-probability  0.5.0
 python                  3.6.7
 ```
 
+## Pre-trained Models:
+You can find pre-trained weights for the breast cancer trained model [here](https://figshare.com/articles/conference_contribution/Adversarial_learning_of_cancer_tissue_representations_-_Breast_Cancer/15108654) and colorectal cancer trained model [here](https://figshare.com/articles/conference_contribution/Adversarial_learning_of_cancer_tissue_representations_-_Colorectal_Cancer/15108705)
 
 ## Training the model:
 You can find a pre-processed HDF5 file with patches of 224x224x3 resolution of the H&E breast cancer dataset [here](https://drive.google.com/open?id=1LpgW85CVA48C8LnpmsDMdHqeCGHKsAxw). Place the 'vgh_nki' under the 'datasets' folder in the main 'Adversarial-learning-of-cancer-tissue-representations' path.
