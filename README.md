@@ -1,5 +1,5 @@
 # Adversarial learning of cancer tissue representations
- * **[Quiros A.C., Coudray N., Yeaton A., Wisuwat W., Murray-Smith R., Tsirigos A., Yuan K. Adversarial learning of cancer tissue representations. Proceedings of The 24th International Conference on Medical Image Computing and Computer-Assisted Intervention (MICCAI) 2021]()** 
+ * **[Quiros A.C., Coudray N., Yeaton A., Wisuwat W., Murray-Smith R., Tsirigos A., Yuan K. Adversarial learning of cancer tissue representations. Proceedings of The 24th International Conference on Medical Image Computing and Computer-Assisted Intervention (MICCAI) 2021](http://arxiv.org/abs/2108.02223)** 
 
 **Abstract:**
 
