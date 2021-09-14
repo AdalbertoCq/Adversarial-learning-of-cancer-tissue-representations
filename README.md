@@ -20,6 +20,10 @@
 }
 ```
 
+ <p align="center">
+    <img src="https://github.com/AdalbertoCq/Adversarial-learning-of-cancer-tissue-representations/blob/4f99dbef3dc820aa831bf6da53a7cb975d2de2a3/demos/MICCAI_2021_Poster___Adversarial_learning_of_cancer_tissue_representations.png">
+  </p>
+
 ## Demo Materials:
 * [**Tissue Reconstructions**](https://github.com/AdalbertoCq/Adversarial-learning-of-cancer-tissue-representations/tree/main/demos/reconstructions):
   - **(a)** Real tissue images, **(b)** Reconstructed images with PathologyGAN.
